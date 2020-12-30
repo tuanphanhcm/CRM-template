@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <title>Button</title>
+    <title>App Trello</title>
 
     <link rel="shortcut icon" href="/assets/images/favicon.ico" />
 
@@ -28,6 +28,9 @@
     <link type="text/css" href="assets/css/vendor-flatpickr.rtl.css" rel="stylesheet" />
     <link type="text/css" href="assets/css/vendor-flatpickr-airbnb.css" rel="stylesheet" />
     <link type="text/css" href="assets/css/vendor-flatpickr-airbnb.rtl.css" rel="stylesheet" />
+
+    <!-- Dragula -->
+    <link type="text/css" href="assets/vendor/dragula/dragula.min.css" rel="stylesheet">
 
 </head>
 
@@ -266,238 +269,306 @@
                                 <ol class="breadcrumb mb-0">
                                     <li class="breadcrumb-item"><a href="#">Home</a></li>
                                     <li class="breadcrumb-item active" aria-current="page">
-                                        Button
+                                        Dashboard
                                     </li>
                                 </ol>
                             </nav>
-                            <h1 class="m-0">Button</h1>
+                            <h1 class="m-0">Dashboard</h1>
                         </div>
                         <div class="ml-auto">
                             <a href="" class="btn btn-light"><i class="material-icons icon-16pt text-muted mr-1">settings</i>
-                Settings</a>
+                                Settings
+                            </a>
+                            <a href="" class="btn btn-success ml-3">New Task</a>
                         </div>
                     </div>
                 </div>
             </div>
             <!-- End Breadcrumb -->
 
-            <div class="container page__container">
-                <!-- Page Content -->
-                <div class="row">
-                    <div class="col-lg">
-                        <div class="card">
-                            <div class="card-header card-header-large bg-white">
-                                <h4 class="card-header__title">Default Buttons</h4>
+            <div class="trello-container">
+                <div class="trello-board page__container">
+                    <div class="trello-board__tasks" data-toggle="dragula" data-dragula-containers='["#trello-tasks-1", "#trello-tasks-2", "#trello-tasks-3", "#trello-tasks-4"]'>
+                        <div class="card bg-light border">
+                            <div class="card-header card-header-sm bg-white border-primary">
+                                <h4 class="card-header__title">Todo (3)</h4>
                             </div>
-                            <div class="card-body">
-                                <p>Use button classes on an <code>&lt;a&gt;</code>, <code>&lt;button&gt;</code>, or <code>&lt;input&gt;</code> element.</p>
+                            <div class="card-body p-2">
+                                <div class="trello-board__tasks-list card-list" id="trello-tasks-1">
 
-                                <div class="button-list d-flex flex-wrap">
-                                    <button type="button" class="btn btn-primary">Primary</button>
-                                    <button type="button" class="btn btn-secondary">Secondary</button>
-                                    <button type="button" class="btn btn-success">Success</button>
-                                    <button type="button" class="btn btn-danger">Danger</button>
-                                    <button type="button" class="btn btn-warning">Warning</button>
-                                    <button type="button" class="btn btn-info">Info</button>
-                                    <button type="button" class="btn btn-light">Light</button>
-                                    <button type="button" class="btn btn-dark">Dark</button>
-                                    <button type="button" class="btn btn-link">Link</button>
+
+
+
+
+                                    <div class="trello-board__tasks-item card shadow-none border">
+                                        <div class="p-3">
+                                            <p class="m-0 d-flex align-items-center">
+                                                <strong>Add UI Buttons Page</strong> <span class="badge badge-light-gray ml-auto">OPEN</span></p>
+
+                                            <p class="d-flex align-items-center mb-2 small">
+                                                <i class="material-icons icon-14pt mr-1 text-muted">folder_open</i>
+                                                <span class="text-muted mr-2">Stack</span>
+                                                <i class="material-icons icon-14pt mr-1 text-muted">comment</i>
+                                                <span class="text-muted"><strong>28</strong> comments</span>
+                                            </p>
+                                            <div class="media align-items-center">
+                                                <div class="media-left mr-2">
+
+                                                    <div class="avatar avatar-xxs" data-toggle="tooltip" data-placement="top" title="Janell D.">
+                                                        <img src="assets/images/256_rsz_1andy-lee-642320-unsplash.jpg" alt="Avatar" class="avatar-img rounded-circle">
+                                                    </div>
+
+                                                </div>
+                                                <div class="media-body small media-middle">
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+                                    <div class="trello-board__tasks-item card shadow-none border">
+                                        <div class="p-3">
+                                            <p class="m-0 d-flex align-items-center">
+                                                <strong>Envato Item Presentation</strong> <span class="badge badge-success ml-auto">RESOLVED</span></p>
+
+                                            <p class="d-flex align-items-center mb-2 small">
+                                                <i class="material-icons icon-14pt mr-1 text-muted">folder_open</i>
+                                                <span class="text-muted mr-2">Stack</span>
+                                                <i class="material-icons icon-14pt mr-1 text-muted">comment</i>
+                                                <span class="text-muted"><strong>28</strong> comments</span>
+                                            </p>
+                                            <div class="media align-items-center">
+                                                <div class="media-left mr-2 avatar-group">
+
+                                                    <div class="avatar avatar-xxs" data-toggle="tooltip" data-placement="top" title="Janell D.">
+                                                        <img src="assets/images/256_rsz_1andy-lee-642320-unsplash.jpg" alt="Avatar" class="avatar-img rounded-circle">
+                                                    </div>
+
+                                                    <div class="avatar avatar-xxs" data-toggle="tooltip" data-placement="top" title="Janell D.">
+                                                        <img src="assets/images/256_michael-dam-258165-unsplash.jpg" alt="Avatar" class="avatar-img rounded-circle">
+                                                    </div>
+
+                                                    <div class="avatar avatar-xxs" data-toggle="tooltip" data-placement="top" title="Janell D.">
+                                                        <img src="assets/images/256_luke-porter-261779-unsplash.jpg" alt="Avatar" class="avatar-img rounded-circle">
+                                                    </div>
+
+                                                </div>
+                                                <div class="media-body small media-middle">
+
+                                                    <a href="">+2 more</a>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+                                    <div class="trello-board__tasks-item card shadow-none border">
+                                        <div class="p-3">
+                                            <p class="m-0 d-flex align-items-center">
+                                                <strong>Add Trello App Page</strong> <span class="badge badge-warning ml-auto">NEED HELP</span></p>
+
+                                            <p class="d-flex align-items-center mb-2 small">
+                                                <i class="material-icons icon-14pt mr-1 text-muted">folder_open</i>
+                                                <span class="text-muted mr-2">Stack</span>
+                                                <i class="material-icons icon-14pt mr-1 text-muted">comment</i>
+                                                <span class="text-muted"><strong>28</strong> comments</span>
+                                            </p>
+                                            <div class="media align-items-center">
+                                                <div class="media-left mr-2">
+
+                                                    <div class="avatar avatar-xxs" data-toggle="tooltip" data-placement="top" title="Janell D.">
+                                                        <img src="assets/images/256_rsz_1andy-lee-642320-unsplash.jpg" alt="Avatar" class="avatar-img rounded-circle">
+                                                    </div>
+
+                                                </div>
+                                                <div class="media-body small media-middle">
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
                                 </div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-header card-header-large bg-white">
-                                <h4 class="card-header__title">Outlined Buttons</h4>
-                            </div>
-                            <div class="card-body">
-                                <p>Use the <code>.btn-outline-*</code> classes to create bordered buttons.</p>
-                                <div class="button-list d-flex flex-wrap">
-                                    <button type="button" class="btn btn-outline-primary">Primary</button>
-                                    <button type="button" class="btn btn-outline-secondary">Secondary</button>
-                                    <button type="button" class="btn btn-outline-success">Success</button>
-                                    <button type="button" class="btn btn-outline-danger">Danger</button>
-                                    <button type="button" class="btn btn-outline-warning">Warning</button>
-                                    <button type="button" class="btn btn-outline-info">Info</button>
-                                    <button type="button" class="btn btn-outline-dark">Dark</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-header card-header-large bg-white">
-                                <h4 class="card-header__title">Rounded Buttons</h4>
-                            </div>
-                            <div class="card-body">
-                                <p>Add <code>rounded</code> to buttons to get large rounded corners.</p>
-                                <div class="button-list d-flex flex-wrap">
-                                    <button type="button" class="btn btn-primary btn-rounded">Primary</button>
-                                    <button type="button" class="btn btn-secondary btn-rounded">Secondary</button>
-                                    <button type="button" class="btn btn-success btn-rounded">Success</button>
-                                    <button type="button" class="btn btn-danger btn-rounded">Danger</button>
-                                    <button type="button" class="btn btn-warning btn-rounded">Warning</button>
-                                    <button type="button" class="btn btn-info btn-rounded">Info</button>
-                                    <button type="button" class="btn btn-light btn-rounded">Light</button>
-                                    <button type="button" class="btn btn-dark btn-rounded">Dark</button>
-                                    <button type="button" class="btn btn-link btn-rounded">Link</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-header card-header-large bg-white">
-                                <h4 class="card-header__title">Rounded Outlined Buttons</h4>
-                            </div>
-                            <div class="card-body">
-                                <p>Use the <code>.btn-outline-*</code> and <code>.btn-rounded</code> classes together to quickly create bordered buttons with large rounded corners.</p>
-                                <div class="button-list d-flex flex-wrap">
-                                    <button type="button" class="btn btn-outline-primary btn-rounded">Primary</button>
-                                    <button type="button" class="btn btn-outline-secondary btn-rounded">Secondary</button>
-                                    <button type="button" class="btn btn-outline-success btn-rounded">Success</button>
-                                    <button type="button" class="btn btn-outline-danger btn-rounded">Danger</button>
-                                    <button type="button" class="btn btn-outline-warning btn-rounded">Warning</button>
-                                    <button type="button" class="btn btn-outline-info btn-rounded">Info</button>
-                                    <button type="button" class="btn btn-outline-dark btn-rounded">Dark</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-header card-header-large bg-white">
-                                <h4 class="card-header__title">Button Sizes</h4>
-                            </div>
-                            <div class="card-body">
-                                <p>Add <code>.btn-lg</code> or <code>.btn-sm</code> classes for additional button sizes.</p>
-                                <div class="button-list d-flex flex-wrap">
-                                    <button type="button" class="btn btn-primary btn-lg">Large</button>
-                                    <button type="button" class="btn btn-info">Normal</button>
-                                    <button type="button" class="btn btn-success btn-sm">Small</button>
-                                </div>
+                                <a href="#" class="btn btn-link text-muted btn-block mt-2">+ Add Card</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg">
-                        <div class="card">
-                            <div class="card-header card-header-large bg-white">
-                                <h4 class="card-header__title">Button Icons</h4>
+                    <div class="trello-board__tasks">
+                        <div class="card bg-light border">
+                            <div class="card-header card-header-sm bg-white border-warning">
+                                <h4 class="card-header__title">In Progress (2)</h4>
                             </div>
-                            <div class="card-body">
-                                <p>Add icons to any button or even use Icon-only buttons.</p>
-                                <div class="button-list d-flex flex-wrap">
-                                    <button type="button" class="btn btn-light">
-                                        <i class="material-icons">favorite_border</i>
-                                    </button>
-                                    <button type="button" class="btn btn-danger">
-                                        <i class="material-icons">close</i>
-                                    </button>
-                                    <button type="button" class="btn btn-dark">
-                                        <i class="material-icons">music_note</i>
-                                    </button>
-                                    <button type="button" class="btn btn-primary">
-                                        <i class="material-icons">star</i>
-                                    </button>
-                                    <button type="button" class="btn btn-success">
-                                        <i class="material-icons">thumb_up</i>
-                                    </button>
-                                    <button type="button" class="btn btn-warning">
-                                        <i class="material-icons">settings</i>
-                                    </button>
-                                    <br>
-                                    <button type="button" class="btn btn-light">
-                                        <i class="material-icons mr-1">favorite</i> Favorite
-                                    </button>
-                                    <button type="button" class="btn btn-warning">
-                                        <i class="material-icons mr-1">launch</i> Launch
-                                    </button>
-                                    <button type="button" class="btn btn-info">
-                                        <i class="material-icons mr-1">cloud</i> Cloud Hosting
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-header card-header-large bg-white">
-                                <h4 class="card-header__title">Button Block</h4>
-                            </div>
-                            <div class="card-body">
-                                <p>Create block level buttons, by adding add <code>.btn-block</code>.</p>
-                                <button type="button" class="btn btn-block btn-primary">Block Button</button>
-                                <button type="button" class="btn btn-block btn-success">Block Button</button>
-                                <button type="button" class="btn btn-block btn-sm btn-info">Block Button</button>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-header card-header-large bg-white">
-                                <h4 class="card-header__title">Button Group</h4>
-                            </div>
-                            <div class="card-body">
-                                <p>Create a group of buttons by wrapping with <code>.btn-group</code>.</p>
-                                <div class="btn-group mb-2">
-                                    <button type="button" class="btn btn-light">Left</button>
-                                    <button type="button" class="btn btn-light">Middle</button>
-                                    <button type="button" class="btn btn-light">Right</button>
-                                </div>
-                                <br>
-                                <div class="btn-group mb-2">
-                                    <button type="button" class="btn btn-light">1</button>
-                                    <button type="button" class="btn btn-light">2</button>
-                                    <button type="button" class="btn btn-light">3</button>
-                                    <button type="button" class="btn btn-light">4</button>
-                                </div>
-                                <div class="btn-group mb-2">
-                                    <button type="button" class="btn btn-light">5</button>
-                                    <button type="button" class="btn btn-light">6</button>
-                                    <button type="button" class="btn btn-light">7</button>
-                                </div>
-                                <div class="btn-group mb-2">
-                                    <button type="button" class="btn btn-light">8</button>
-                                </div>
-                                <br>
-                                <div class="btn-group mb-2">
-                                    <button type="button" class="btn btn-light">1</button>
-                                    <button type="button" class="btn btn-primary">2</button>
-                                    <button type="button" class="btn btn-light">3</button>
-                                    <div class="btn-group">
-                                        <button type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown" aria-expanded="false"> Dropdown <span class="caret"></span> </button>
-                                        <div class="dropdown-menu">
-                                            <a class="dropdown-item" href="#">Dropdown link</a>
-                                            <a class="dropdown-item" href="#">Dropdown link</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <br>
-                                <div class="d-lg-flex">
-                                    <div class="btn-group-vertical mb-2 mr-lg-1 d-flex">
-                                        <button type="button" class="btn btn-light">Top</button>
-                                        <button type="button" class="btn btn-light">Middle</button>
-                                        <button type="button" class="btn btn-light">Bottom</button>
-                                    </div>
-                                    <div class="btn-group-vertical mb-2 d-flex">
-                                        <button type="button" class="btn btn-light">Button 1</button>
-                                        <button type="button" class="btn btn-light">Button 2</button>
-                                        <button type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown" aria-expanded="false"> Button 3 <span class="caret"></span> </button>
-                                        <div class="dropdown-menu">
-                                            <a class="dropdown-item" href="#">Dropdown link</a>
-                                            <a class="dropdown-item" href="#">Dropdown link</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                            <div class="card-body p-2">
+                                <div class="trello-board__tasks-list card-list" id="trello-tasks-2">
 
-                        <div class="card">
-                            <div class="card-header card-header-large bg-white">
-                                <h4 class="card-header__title">Disabled Buttons</h4>
-                            </div>
-                            <div class="card-body">
-                                <p>Add the <code>disabled</code> attribute to disable buttons.</p>
-                                <div class="button-list d-flex">
-                                    <button type="button" class="btn btn-info" disabled="">Info</button>
-                                    <button type="button" class="btn btn-success" disabled="">Success</button>
-                                    <button type="button" class="btn btn-danger" disabled="">Danger</button>
-                                    <button type="button" class="btn btn-dark" disabled="">Dark</button>
+
+
+
+
+                                    <div class="trello-board__tasks-item card shadow-none border">
+                                        <div class="p-3">
+                                            <p class="m-0 d-flex align-items-center">
+                                                <strong>Add Trello App Page</strong> <span class="badge badge-danger ml-auto">HIGH</span></p>
+
+                                            <p class="d-flex align-items-center mb-2 small">
+                                                <i class="material-icons icon-14pt mr-1 text-muted">folder_open</i>
+                                                <span class="text-muted mr-2">Stack</span>
+                                                <i class="material-icons icon-14pt mr-1 text-muted">comment</i>
+                                                <span class="text-muted"><strong>28</strong> comments</span>
+                                            </p>
+                                            <div class="media align-items-center">
+                                                <div class="media-left mr-2 avatar-group">
+
+                                                    <div class="avatar avatar-xxs" data-toggle="tooltip" data-placement="top" title="Janell D.">
+                                                        <img src="assets/images/256_rsz_1andy-lee-642320-unsplash.jpg" alt="Avatar" class="avatar-img rounded-circle">
+                                                    </div>
+
+                                                    <div class="avatar avatar-xxs" data-toggle="tooltip" data-placement="top" title="Janell D.">
+                                                        <img src="assets/images/256_michael-dam-258165-unsplash.jpg" alt="Avatar" class="avatar-img rounded-circle">
+                                                    </div>
+
+                                                </div>
+                                                <div class="media-body small media-middle">
+
+                                                    <a href="">+1 more</a>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+                                    <div class="trello-board__tasks-item card shadow-none border">
+                                        <div class="p-3">
+                                            <p class="m-0 d-flex align-items-center">
+                                                <strong>Add UI Alerts Page</strong> <span class="badge badge-light-gray ml-auto">OPEN</span></p>
+
+                                            <p class="d-flex align-items-center mb-2 small">
+                                                <i class="material-icons icon-14pt mr-1 text-muted">folder_open</i>
+                                                <span class="text-muted mr-2">Stack</span>
+                                                <i class="material-icons icon-14pt mr-1 text-muted">comment</i>
+                                                <span class="text-muted"><strong>28</strong> comments</span>
+                                            </p>
+                                            <div class="media align-items-center">
+                                                <div class="media-left mr-2">
+
+                                                    <div class="avatar avatar-xxs" data-toggle="tooltip" data-placement="top" title="Janell D.">
+                                                        <img src="assets/images/256_rsz_1andy-lee-642320-unsplash.jpg" alt="Avatar" class="avatar-img rounded-circle">
+                                                    </div>
+
+                                                </div>
+                                                <div class="media-body small media-middle">
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
                                 </div>
+                                <a href="#" class="btn btn-link text-muted btn-block mt-2">+ Add Card</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="trello-board__tasks">
+                        <div class="card bg-light border">
+                            <div class="card-header card-header-sm bg-white border-purple">
+                                <h4 class="card-header__title">Review (1)</h4>
+                            </div>
+                            <div class="card-body p-2">
+                                <div class="trello-board__tasks-list card-list" id="trello-tasks-3">
+
+
+
+
+
+                                    <div class="trello-board__tasks-item card shadow-none border">
+                                        <div class="p-3">
+                                            <p class="m-0 d-flex align-items-center">
+                                                <strong>Add UI Modals Page</strong> <span class="badge badge-success ml-auto">RESOLVED</span></p>
+
+                                            <p class="d-flex align-items-center mb-2 small">
+                                                <i class="material-icons icon-14pt mr-1 text-muted">folder_open</i>
+                                                <span class="text-muted mr-2">Stack</span>
+                                                <i class="material-icons icon-14pt mr-1 text-muted">comment</i>
+                                                <span class="text-muted"><strong>28</strong> comments</span>
+                                            </p>
+                                            <div class="media align-items-center">
+                                                <div class="media-left mr-2">
+
+                                                    <div class="avatar avatar-xxs" data-toggle="tooltip" data-placement="top" title="Janell D.">
+                                                        <img src="assets/images/256_rsz_1andy-lee-642320-unsplash.jpg" alt="Avatar" class="avatar-img rounded-circle">
+                                                    </div>
+
+                                                </div>
+                                                <div class="media-body small media-middle">
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+                                </div>
+                                <a href="#" class="btn btn-link text-muted btn-block mt-2">+ Add Card</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="trello-board__tasks">
+                        <div class="card bg-light border">
+                            <div class="card-header card-header-sm bg-white border-success">
+                                <h4 class="card-header__title">Done (1)</h4>
+                            </div>
+                            <div class="card-body p-2">
+                                <div class="trello-board__tasks-list card-list" id="trello-tasks-4">
+
+
+
+
+
+                                    <div class="trello-board__tasks-item card shadow-none border">
+                                        <div class="p-3">
+                                            <p class="m-0 d-flex align-items-center">
+                                                <strong>Add UI Avatars Page</strong> <span class="badge badge-warning ml-auto">NEED HELP</span></p>
+
+                                            <p class="d-flex align-items-center mb-2 small">
+                                                <i class="material-icons icon-14pt mr-1 text-muted">folder_open</i>
+                                                <span class="text-muted mr-2">Stack</span>
+                                                <i class="material-icons icon-14pt mr-1 text-muted">comment</i>
+                                                <span class="text-muted"><strong>28</strong> comments</span>
+                                            </p>
+                                            <div class="media align-items-center">
+                                                <div class="media-left mr-2">
+
+                                                    <div class="avatar avatar-xxs" data-toggle="tooltip" data-placement="top" title="Janell D.">
+                                                        <img src="assets/images/256_rsz_1andy-lee-642320-unsplash.jpg" alt="Avatar" class="avatar-img rounded-circle">
+                                                    </div>
+
+                                                </div>
+                                                <div class="media-body small media-middle">
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+                                </div>
+                                <a href="#" class="btn btn-link text-muted btn-block mt-2">+ Add Card</a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- END Page Content -->
             </div>
 
             <!-- // END Header Layout Content -->
@@ -597,15 +668,9 @@
     <!-- Global Settings -->
     <script src="assets/js/settings.js"></script>
 
-    <!-- Chart.js -->
-    <script src="assets/vendor/Chart.min.js"></script>
-
-    <!-- App Charts JS -->
-    <script src="assets/js/chartjs-rounded-bar.js"></script>
-    <script src="assets/js/charts.js"></script>
-
-    <!-- Chart Samples -->
-    <script src="assets/js/page.dashboard.js"></script>
+    <!-- Dragula -->
+    <script src="assets/vendor/dragula/dragula.min.js"></script>
+    <script src="assets/js/dragula.js"></script>
 </body>
 
 </html>

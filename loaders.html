@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <title>Template</title>
+    <title>Loaders</title>
 
     <link rel="shortcut icon" href="/assets/images/favicon.ico" />
 
@@ -198,7 +198,7 @@
                         <div class="navbar-collapse collapse" id="navbarsExample03">
                             <ul class="nav navbar-nav flex">
                                 <li class="nav-item">
-                                    <a class="nav-link active" href="fixed-dashboard.html">
+                                    <a class="nav-link active" href="dashboard.html">
                                         Home</a>
                                 </li>
                                 <li class="nav-item dropdown">
@@ -266,11 +266,11 @@
                                 <ol class="breadcrumb mb-0">
                                     <li class="breadcrumb-item"><a href="#">Home</a></li>
                                     <li class="breadcrumb-item active" aria-current="page">
-                                        Dashboard
+                                        Loaders
                                     </li>
                                 </ol>
                             </nav>
-                            <h1 class="m-0">Dashboard</h1>
+                            <h1 class="m-0">Loaders</h1>
                         </div>
                         <div class="ml-auto">
                             <a href="" class="btn btn-light"><i class="material-icons icon-16pt text-muted mr-1">settings</i>
@@ -283,7 +283,61 @@
 
             <div class="container page__container">
                 <!-- Page Content -->
-                <span class="text-primary">Page content is here</span>
+                <div class="row">
+                    <div class="col-lg">
+                        <div class="card">
+                            <div class="card-header card-header-large bg-white">
+                                <h4 class="card-header__title">Sizes</h4>
+                            </div>
+                            <div class="card-body">
+                                <p>A simple yet versatile animated spinner component. Add <code>.loader-[sm|lg]</code> or <code>.is-loading-[sm|lg]</code> to create loaders at different sizes.</p>
+                                <div class="loader-list">
+                                    <div class="loader loader-lg"></div>
+                                    <div class="loader"></div>
+                                    <div class="loader loader-sm"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h4>Loader Helper</h4>
+                        <p>Indicate loading state of nearly any component with an <code>.is-loading</code> modifier.</p>
+
+                        <div class="card">
+                            <div class="card-header card-header-large bg-white">
+                                <h4 class="card-header__title">Loading card</h4>
+                            </div>
+                            <div class="card-body is-loading is-loading-lg">
+                                Loading content
+                            </div>
+                        </div>
+
+                        <div class="button-list">
+                            <a href="#" class="btn btn-lg btn-primary is-loading">Button</a>
+                            <a href="#" class="btn btn-outline-primary is-loading is-loading-sm">Button</a>
+                        </div>
+                    </div>
+                    <div class="col-lg">
+                        <div class="card">
+                            <div class="card-header card-header-large bg-white">
+                                <h4 class="card-header__title">Colors</h4>
+                            </div>
+                            <div class="card-body">
+                                <p>Using Bootstrap’s typical naming structure i.e. <code>.loader-primary</code>, you can create colored loaders depending on your needs.</p>
+
+                                <div class="loader-list">
+                                    <div class="loader loader-primary"></div>
+                                    <div class="loader loader-secondary"></div>
+                                    <div class="loader loader-success"></div>
+                                    <div class="loader loader-danger"></div>
+                                    <div class="loader loader-warning"></div>
+                                    <div class="loader loader-info"></div>
+                                    <div class="loader loader-dark"></div>
+                                    <div class="loader loader-light"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <!-- END Page Content -->
             </div>
 
@@ -346,7 +400,7 @@
     <div id="app-settings" hidden>
         <app-settings layout-active="fixed" :layout-location="{
       'default': 'index.html',
-      'fixed': 'fixed-dashboard.html',
+      'fixed': 'dashboard.html',
       'fluid': 'fluid-dashboard.html',
       'mini': 'mini-dashboard.html'}">
         </app-settings>
