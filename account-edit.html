@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <title>Template</title>
+    <title>Account</title>
 
     <link rel="shortcut icon" href="/assets/images/favicon.ico" />
 
@@ -28,6 +28,10 @@
     <link type="text/css" href="assets/css/vendor-flatpickr.rtl.css" rel="stylesheet" />
     <link type="text/css" href="assets/css/vendor-flatpickr-airbnb.css" rel="stylesheet" />
     <link type="text/css" href="assets/css/vendor-flatpickr-airbnb.rtl.css" rel="stylesheet" />
+
+    <!-- Dropzone -->
+    <link type="text/css" href="assets/css/vendor-dropzone.css" rel="stylesheet">
+    <link type="text/css" href="assets/css/vendor-dropzone.rtl.css" rel="stylesheet">
 
 </head>
 
@@ -266,11 +270,11 @@
                                 <ol class="breadcrumb mb-0">
                                     <li class="breadcrumb-item"><a href="#">Home</a></li>
                                     <li class="breadcrumb-item active" aria-current="page">
-                                        Dashboard
+                                        Account
                                     </li>
                                 </ol>
                             </nav>
-                            <h1 class="m-0">Dashboard</h1>
+                            <h1 class="m-0">Edit Account</h1>
                         </div>
                         <div class="ml-auto">
                             <a href="" class="btn btn-light"><i class="material-icons icon-16pt text-muted mr-1">settings</i>
@@ -283,54 +287,137 @@
 
             <div class="container page__container">
                 <!-- Page Content -->
-                <div class="row">
-                    <div class="col-lg">
-                        <div class="card">
-                            <div class="card-header card-header-large bg-white">
-                                <h4 class="card-header__title">Bootstrap</h4>
-                            </div>
-                            <div class="card-body button-list">
-                                <p>A rendered modal with header, body, and set of actions in the footer.</p>
-                                <button type="button" class="btn btn-primary d-inline-flex" data-toggle="modal" data-target="#modal-standard">Standard Modal</button>
-                                <button type="button" class="btn btn-info d-inline-flex" data-toggle="modal" data-target="#modal-large">Large Modal</button>
-                                <button type="button" class="btn btn-success d-inline-flex" data-toggle="modal" data-target="#modal-small">Small Modal</button>
-                            </div>
+                <div class="card card-form">
+                    <div class="row no-gutters">
+                        <div class="col-lg-4 card-body">
+                            <p><strong class="headings-color">Basic Information</strong></p>
+                            <p class="text-muted">Edit your account details and settings.</p>
                         </div>
-                        <div class="card">
-                            <div class="card-header card-header-large bg-white">
-                                <h4 class="card-header__title">Alerts</h4>
+                        <div class="col-lg-8 card-form__body card-body">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="fname">First name</label>
+                                        <input id="fname" type="text" class="form-control" placeholder="First name" value="Adrian">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="lname">Last name</label>
+                                        <input id="lname" type="text" class="form-control" placeholder="Last name" value="Demian">
+                                    </div>
+                                </div>
                             </div>
-                            <div class="card-body button-list">
-                                <p>Show different contexual alert messages using modal component.</p>
-                                <button type="button" class="btn btn-success d-inline-flex" data-toggle="modal" data-target="#modal-success">Success Alert</button>
-                                <button type="button" class="btn btn-info d-inline-flex" data-toggle="modal" data-target="#modal-info">Info Alert</button>
-                                <button type="button" class="btn btn-warning d-inline-flex" data-toggle="modal" data-target="#modal-warning">Warning Alert</button>
-                                <button type="button" class="btn btn-danger d-inline-flex" data-toggle="modal" data-target="#modal-danger">Error Alert</button>
+                            <div class="form-group">
+                                <label for="desc">Bio / Description</label>
+                                <textarea id="desc" rows="4" class="form-control" placeholder="Bio / description ..."></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="country">Country</label><br>
+                                <select id="country" class="custom-select" style="width: auto;">
+                                    <option value="usa">United States</option>
+                                </select>
+                                <small class="form-text text-muted">The country is not visible to other users.</small>
+                            </div>
+                            <div class="form-group">
+                                <label for="subscribe">Subscribe to newsletter</label><br>
+                                <div class="custom-control custom-checkbox-toggle custom-control-inline mr-1">
+                                    <input checked="" type="checkbox" id="subscribe" class="custom-control-input">
+                                    <label class="custom-control-label" for="subscribe">Yes</label>
+                                </div>
+                                <label for="subscribe" class="mb-0">Yes</label>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg">
-                        <div class="card">
-                            <div class="card-header card-header-large bg-white">
-                                <h4 class="card-header__title">Pages</h4>
-                            </div>
-                            <div class="card-body button-list">
-                                <p>Examples of modals with custom content.</p>
-                                <button type="button" class="btn btn-primary d-inline-flex" data-toggle="modal" data-target="#modal-signup">Sign Up Modal</button>
-                                <button type="button" class="btn btn-info d-inline-flex" data-toggle="modal" data-target="#modal-login">Login Modal</button>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-header card-header-large bg-white">
-                                <h4 class="card-header__title">Vertically Centered</h4>
-                            </div>
-                            <div class="card-body button-list">
-                                <p>By default, modals will be positioned at the top of the page, but you can change this to vertically centered by adding the <code>.modal-dialog-centered</code> class to the <code>&lt;div class=&quot;modal-dialog&quot;&gt;...&lt;/div&gt;</code>                                    element.</p>
+                </div>
 
-                                <button type="button" class="btn btn-secondary d-inline-flex" data-toggle="modal" data-target="#modal-center">Vertically Centered Modal</button>
+                <div class="card card-form">
+                    <div class="row no-gutters">
+                        <div class="col-lg-4 card-body">
+                            <p><strong class="headings-color">Update Your Password</strong></p>
+                            <p class="text-muted">Change your password.</p>
+                        </div>
+                        <div class="col-lg-8 card-form__body card-body">
+                            <div class="form-group">
+                                <label for="opass">Old Password</label>
+                                <input style="width: 270px;" id="opass" type="password" class="form-control" placeholder="Old password" value="****">
+                            </div>
+                            <div class="form-group">
+                                <label for="npass">New Password</label>
+                                <input style="width: 270px;" id="npass" type="password" class="form-control is-invalid">
+                                <small class="invalid-feedback">The new password must not be empty.</small>
+                            </div>
+                            <div class="form-group">
+                                <label for="cpass">Confirm Password</label>
+                                <input style="width: 270px;" id="cpass" type="password" class="form-control" placeholder="Confirm password">
                             </div>
                         </div>
                     </div>
+                </div>
+
+                <div class="card card-form">
+                    <div class="row no-gutters">
+                        <div class="col-lg-4 card-body">
+                            <p><strong class="headings-color">Profile Settings</strong></p>
+                            <p class="text-muted">Update your public profile with relevant and meaningful information.</p>
+                        </div>
+                        <div class="col-lg-8 card-form__body card-body">
+                            <div class="form-group">
+                                <label>Avatar</label>
+                                <div class="dz-clickable media align-items-center" data-toggle="dropzone" data-dropzone-url="http://" data-dropzone-clickable=".dz-clickable" data-dropzone-files='["assets/images/account-add-photo.svg"]'>
+                                    <div class="dz-preview dz-file-preview dz-clickable mr-3">
+                                        <div class="avatar" style="width: 80px; height: 80px;">
+                                            <img src="assets/images/account-add-photo.svg" class="avatar-img rounded" alt="..." data-dz-thumbnail>
+                                        </div>
+                                    </div>
+                                    <div class="media-body">
+                                        <button class="btn btn-sm btn-primary dz-clickable">Choose photo</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="desc2">Description</label>
+                                <textarea id="desc2" rows="4" class="form-control" placeholder="Description ..."></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="social1">Social links</label>
+                                <div class="input-group input-group-merge mb-2" style="width: 270px;">
+                                    <input id="social1" type="text" class="form-control form-control-prepended" placeholder="Facebook">
+                                    <div class="input-group-prepend">
+                                        <div class="input-group-text">
+                                            <span class="fab fa-facebook"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="input-group input-group-merge mb-2" style="width: 270px;">
+                                    <input id="social2" type="text" class="form-control form-control-prepended" placeholder="Twitter">
+                                    <div class="input-group-prepend">
+                                        <div class="input-group-text">
+                                            <span class="fab fa-twitter"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="input-group input-group-merge mb-2" style="width: 270px;">
+                                    <input id="social3" type="text" class="form-control form-control-prepended" placeholder="Instagram">
+                                    <div class="input-group-prepend">
+                                        <div class="input-group-text">
+                                            <span class="fab fa-instagram"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="customCheck1">Available for freelance?</label>
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="customCheck1" checked="">
+                                    <label class="custom-control-label" for="customCheck1">Yes, show me as available for freelance!</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-right mb-5">
+                    <a href="" class="btn btn-success">Save</a>
                 </div>
                 <!-- END Page Content -->
             </div>
@@ -432,285 +519,9 @@
     <!-- Global Settings -->
     <script src="assets/js/settings.js"></script>
 
-    <!-- Chart.js -->
-    <script src="assets/vendor/Chart.min.js"></script>
-
-    <!-- App Charts JS -->
-    <script src="assets/js/chartjs-rounded-bar.js"></script>
-    <script src="assets/js/charts.js"></script>
-
-    <!-- Chart Samples -->
-    <script src="assets/js/page.dashboard.js"></script>
-
-    <!-- Sign Up Modal -->
-    <div id="modal-signup" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-body">
-                    <div class="px-3">
-                        <div class="d-flex justify-content-center mt-2 mb-4 navbar-light">
-                            <a href="dashboard.html" class="navbar-brand" style="min-width: 0">
-                                <img class="navbar-brand-icon" src="assets/images/logo.png" width="250" alt="Cybersoft">
-                            </a>
-                        </div>
-
-                        <form action="#">
-                            <div class="form-group">
-                                <label for="username">Name:</label>
-                                <input class="form-control" type="text" id="username" required="" placeholder="John Doe" />
-                            </div>
-                            <div class="form-group">
-                                <label for="email">Email Address:</label>
-                                <input class="form-control" type="email" id="email" required="" placeholder="john@doe.com" />
-                            </div>
-                            <div class="form-group">
-                                <label for="password">Password:</label>
-                                <input class="form-control" type="password" required="" id="password" placeholder="Enter your password" />
-                            </div>
-                            <div class="form-group">
-                                <div class="custom-control custom-checkbox">
-                                    <input type="checkbox" class="custom-control-input" id="terms" />
-                                    <label class="custom-control-label" for="terms">I accept <a href="#">Terms and Conditions</a></label>
-                                </div>
-                            </div>
-                            <div class="form-group text-center">
-                                <button class="btn btn-primary" type="submit">Create Account</button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-                <!-- // END .modal-body -->
-            </div>
-            <!-- // END .modal-content -->
-        </div>
-        <!-- // END .modal-dialog -->
-    </div>
-    <!-- // END .modal -->
-
-    <!-- Login Modal -->
-    <div id="modal-login" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-body">
-                    <div class="px-3">
-                        <div class="d-flex justify-content-center mt-2 mb-4 navbar-light">
-                            <a href="dashboard.html" class="navbar-brand" style="min-width: 0">
-                                <img class="navbar-brand-icon" src="assets/images/logo.png" width="250" alt="Cybersoft">
-                            </a>
-                        </div>
-
-                        <form action="#">
-                            <div class="form-group">
-                                <label for="email_2">Email Address:</label>
-                                <input class="form-control" type="email" id="email_2" required="" placeholder="john@doe.com">
-                            </div>
-                            <div class="form-group">
-                                <label for="password_2">Password:</label>
-                                <input class="form-control" type="password" required="" id="password_2" placeholder="Enter your password">
-                            </div>
-                            <div class="form-group">
-                                <div class="custom-control custom-checkbox">
-                                    <input type="checkbox" class="custom-control-input" checked="" id="remember">
-                                    <label class="custom-control-label" for="remember">Remember me</label>
-                                </div>
-                            </div>
-                            <div class="form-group text-center">
-                                <button class="btn btn-primary" type="submit">Login</button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-                <!-- // END .modal-body -->
-            </div>
-            <!-- // END .modal-content -->
-        </div>
-        <!-- // END .modal-dialog -->
-    </div>
-    <!-- // END .modal -->
-
-    <!-- Success Alert Modal -->
-    <div id="modal-success" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-sm">
-            <div class="modal-content bg-success">
-                <div class="modal-body text-center p-4">
-                    <i class="material-icons icon-40pt text-white mb-2">check</i>
-                    <h4 class="text-white">Well Done!</h4>
-                    <p class="text-white mt-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt eaque explicabo, itaque iusto unde quas magni non, quae expedita eveniet, incidunt molestiae tempora maiores odit hic perspiciatis. Eveniet, porro illo.</p>
-                    <button type="button" class="btn btn-light my-2" data-dismiss="modal">Continue</button>
-                </div>
-                <!-- // END .modal-body -->
-            </div>
-            <!-- // END .modal-content -->
-        </div>
-        <!-- // END .modal-dialog -->
-    </div>
-    <!-- // END .modal -->
-
-    <!-- Info Alert Modal -->
-    <div id="modal-info" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-sm">
-            <div class="modal-content">
-                <div class="modal-body text-center p-4">
-                    <i class="material-icons icon-40pt text-info mb-2">info_outline</i>
-                    <h4>Heads Up!</h4>
-                    <p class="mt-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt eaque explicabo, itaque iusto unde quas magni non, quae expedita eveniet, incidunt molestiae tempora maiores odit hic perspiciatis. Eveniet, porro illo.</p>
-                    <button type="button" class="btn btn-info my-2" data-dismiss="modal">Continue</button>
-                </div>
-                <!-- // END .modal-body -->
-            </div>
-            <!-- // END .modal-content -->
-        </div>
-        <!-- // END .modal-dialog -->
-    </div>
-    <!-- // END .modal -->
-
-    <!-- Warning Alert Modal -->
-    <div id="modal-warning" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-sm">
-            <div class="modal-content">
-                <div class="modal-body text-center p-4">
-                    <i class="material-icons icon-40pt text-warning mb-2">warning</i>
-                    <h4>Warning!</h4>
-                    <p class="mt-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt eaque explicabo, itaque iusto unde quas magni non, quae expedita eveniet, incidunt molestiae tempora maiores odit hic perspiciatis. Eveniet, porro illo.</p>
-                    <button type="button" class="btn btn-warning my-2" data-dismiss="modal">Continue</button>
-                </div>
-                <!-- // END .modal-body -->
-            </div>
-            <!-- // END .modal-content -->
-        </div>
-        <!-- // END .modal-dialog -->
-    </div>
-    <!-- // END .modal -->
-
-    <!-- Danger Alert Modal -->
-    <div id="modal-danger" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-sm">
-            <div class="modal-content bg-danger">
-                <div class="modal-body text-center p-4">
-                    <i class="material-icons icon-40pt text-white mb-2">report_problem</i>
-                    <h4 class="text-white">Ohhh Snap!</h4>
-                    <p class="text-white mt-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt eaque explicabo, itaque iusto unde quas magni non, quae expedita eveniet, incidunt molestiae tempora maiores odit hic perspiciatis. Eveniet, porro illo.</p>
-                    <button type="button" class="btn btn-light my-2" data-dismiss="modal">Continue</button>
-                </div>
-                <!-- // END .modal-body -->
-            </div>
-            <!-- // END .modal-content -->
-        </div>
-        <!-- // END .modal-dialog -->
-    </div>
-    <!-- // END .modal -->
-
-    <div id="modal-center" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="modal-center-title" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="modal-center-title">Modal title</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <!-- // END .modal-header -->
-                <div class="modal-body">
-                    <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
-                </div>
-                <!-- // END .modal-body -->
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-light" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
-                </div>
-                <!-- // END .modal-footer -->
-            </div>
-            <!-- // END .modal-content -->
-        </div>
-        <!-- // END .modal-dialog -->
-    </div>
-    <!-- // END .modal -->
-
-    <div id="modal-standard" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="modal-standard-title" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="modal-standard-title">Standard modal</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <!-- // END .modal-header -->
-                <div class="modal-body">
-                    <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
-                </div>
-                <!-- // END .modal-body -->
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-light" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
-                </div>
-                <!-- // END .modal-footer -->
-            </div>
-            <!-- // END .modal-content -->
-        </div>
-        <!-- // END .modal-dialog -->
-    </div>
-    <!-- // END .modal -->
-
-    <div id="modal-large" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="modal-large-title" aria-hidden="true">
-        <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="modal-large-title">Large modal</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <!-- // END .modal-header -->
-                <div class="modal-body">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae aliquam tempora quibusdam rem facere? Nulla dolorum, velit cumque maiores architecto officiis reprehenderit adipisci magnam doloribus dolores ratione error omnis
-                        quos voluptate culpa excepturi, autem ipsum! Vitae exercitationem cumque provident, aliquid repudiandae placeat necessitatibus?</p>
-                    <p>Temporibus delectus soluta necessitatibus a est dolores quos esse enim, sint maxime assumenda sapiente harum tempora eius ullam. Earum quam, explicabo magni, blanditiis sint, nam reprehenderit porro suscipit voluptates cum eius. Pariatur
-                        vel rerum, saepe, rem harum, nam ipsum deserunt vitae odio, quaerat sapiente nulla! Nulla nesciunt labore, distinctio aut, aliquam possimus sapiente qui adipisci quae fuga, consectetur hic. Facilis nostrum officiis saepe quia nemo,
-                        adipisci libero illo sint omnis. Placeat doloremque, omnis eligendi ullam fugit, aut.</p>
-                    <p>Aliquam maxime nobis ut porro sit, repellendus beatae provident suscipit at soluta sapiente, cupiditate dolore similique alias doloribus aperiam, veritatis quibusdam numquam adipisci sequi quasi rerum architecto inventore vitae fugiat.
-                        Odio corporis est, temporibus earum molestias quos, labore dignissimos eligendi, laboriosam, incidunt illum!</p>
-                    <p>Itaque officia repellat temporibus quis quasi ipsum reprehenderit dicta pariatur tenetur nisi officiis ad eaque veritatis velit dolore eos iste, beatae labore. Quo, incidunt vitae sint tempore, delectus sapiente pariatur labore illo
-                        veniam itaque molestiae consequatur doloribus.</p>
-                </div>
-                <!-- // END .modal-body -->
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-light" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
-                </div>
-                <!-- // END .modal-footer -->
-            </div>
-            <!-- // END .modal-content -->
-        </div>
-        <!-- // END .modal-dialog -->
-    </div>
-    <!-- // END .modal -->
-
-    <div id="modal-small" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="modal-small-title" aria-hidden="true">
-        <div class="modal-dialog modal-sm" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="modal-small-title">Small modal</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <!-- // END .modal-header -->
-                <div class="modal-body">
-                    <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
-                </div>
-                <!-- // END .modal-body -->
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-light" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
-                </div>
-                <!-- // END .modal-footer -->
-            </div>
-            <!-- // END .modal-content -->
-        </div>
-        <!-- // END .modal-dialog -->
-    </div>
-    <!-- // END .modal -->
+    <!-- Dropzone -->
+    <script src="assets/vendor/dropzone.min.js"></script>
+    <script src="assets/js/dropzone.js"></script>
 </body>
 
 </html>
